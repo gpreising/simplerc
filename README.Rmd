@@ -11,10 +11,27 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 # Please put your title here to include it in the file below.
-Title <- "Title of your paper goes here"
+Title <- "simplerc: Introduction to Random Walks"
 ```
 
 # simplerc
+
+simplerc is a package used to simulate and plot random walks. Using a sequence of positions, simplerc will simulate, visualize, and fit a random walk.  
+
+# Example
+
+Here is a basic example of a simulated random walk. Once installed (see "How to run in your broswer or download and run locally"), we load the simplerc library and define our random walk parameters:
+
+```{r fig1, fig.cap="A random walk"}
+library(simplerc)
+
+t <- 100 # number of timesteps
+mu <- 0.5 # mean step lengths
+sigma <- 2 # standard deviation of step lengths
+
+walk <- simulate_walk(t, mu, sigma)
+plot_walk(walk)
+```
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh///master?urlpath=rstudio)
 
@@ -25,7 +42,6 @@ This repository contains the data and code for our paper:
 Our pre-print is online here:
 
 > Authors, (YYYY). _`r Title`_. Name of journal/book, Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/xxx/xxx>
-
 
 ### How to cite
 
