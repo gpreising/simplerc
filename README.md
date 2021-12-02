@@ -10,7 +10,7 @@ random walk.
 # Example
 
 Here is a basic example of a simulated random walk. Once installed (see
-"How to run in your broswer or download and run locally), we load the
+“How to run in your broswer or download and run locally”), we load the
 simplerc library and define our random walk parameters:
 
 ``` r
